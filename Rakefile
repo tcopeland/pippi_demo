@@ -4,3 +4,9 @@
 require File.expand_path('../config/application', __FILE__)
 
 PippiDemo::Application.load_tasks
+
+# TODO
+# begin
+#   require 'pippi/tasks'
+# rescue LoadError
+# end

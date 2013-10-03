@@ -13,3 +13,9 @@ class ActiveSupport::TestCase
 
   # Add more helper methods to be used by all tests here...
 end
+
+if ENV['USE_PIPPI'].present?
+  # TODO do something so the Rails project doesn't need to know so much about Pippi internals
+  ctx = Pippi::Context.new({:report => Pippi::Report.new(Logger.new("log/pippi.log", "w")), :logger => self})
+  TracepointListener.new(Pippi::CheckLoader.for_check_name(ctx, "SelectFollowedByFirst").check)
+end

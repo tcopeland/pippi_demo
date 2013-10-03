@@ -7,4 +7,8 @@ class BookTest < ActiveSupport::TestCase
       Book.create!
     end
   end
+
+  test "select followed by first" do
+    Book.new.select_followed_by_first_demo
+  end
 end
