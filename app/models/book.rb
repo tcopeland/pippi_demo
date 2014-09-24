@@ -1,7 +1,7 @@
 class Book < ActiveRecord::Base
 
-  def select_followed_by_first_demo
-    [1,2,3].select {|x| x > 1 }.first
+  def map_followed_by_flatten_demo
+    [1,2,3].map {|x| [x,x+1] }.flatten
   end
 
 end

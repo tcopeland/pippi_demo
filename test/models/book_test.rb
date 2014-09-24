@@ -8,7 +8,7 @@ class BookTest < ActiveSupport::TestCase
     end
   end
 
-  test "select followed by first" do
-    Book.new.select_followed_by_first_demo
+  test "map followed by flatten" do
+    Book.new.map_followed_by_flatten_demo
   end
 end
