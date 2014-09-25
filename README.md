@@ -14,7 +14,12 @@ bundle exec rake db:migrate
 USE_PIPPI=true bundle exec ruby test/models/book_test.rb
 ```
 
-And look!  There's some output in log/pippi.log.
+And look!  There's some output in log/pippi.log.  Something like:
+
+```text
+# Logfile created on 2014-09-24 23:39:18 -0400 by logger.rb/44203
+W, [2014-09-24T23:39:18.072953 #66895]  WARN -- : /Users/tomcopeland/github.com/pippi_demo/app/models/book.rb,MapFollowedByFlatten,4
+```
 
 ## Development
 
