@@ -4,10 +4,6 @@ require File.expand_path('../../config/environment', __FILE__)
 # This must be before test/unit is required
 if ENV['USE_PIPPI'].present?
   Pippi::AutoRunner.new
-  class ActiveSupport::Cache::Store
-    def write(*_)
-    end
-  end
 end
 
 require 'rails/test_help'
