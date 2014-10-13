@@ -11,4 +11,8 @@ class BookTest < ActiveSupport::TestCase
   test "map followed by flatten" do
     Book.new.map_followed_by_flatten_demo
   end
+
+  test "reverse followed by each" do
+    Book.new.reverse_followed_by_each_demo
+  end
 end
