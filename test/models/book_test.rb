@@ -15,4 +15,8 @@ class BookTest < ActiveSupport::TestCase
   test "reverse followed by each" do
     Book.new.reverse_followed_by_each_demo
   end
+
+  test "select followed by first" do
+    Book.new.select_followed_by_first_demo
+  end
 end
