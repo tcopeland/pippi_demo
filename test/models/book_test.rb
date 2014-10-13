@@ -19,4 +19,8 @@ class BookTest < ActiveSupport::TestCase
   test "select followed by first" do
     Book.new.select_followed_by_first_demo
   end
+  
+  test "select followed by size" do
+    Book.new.select_followed_by_size_demo
+  end
 end
