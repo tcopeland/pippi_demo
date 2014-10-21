@@ -23,4 +23,9 @@ class BookTest < ActiveSupport::TestCase
   test "select followed by size" do
     Book.new.select_followed_by_size_demo
   end
+
+  test "assert with nil" do
+    x = nil
+    assert_equal(nil, x)
+  end
 end
