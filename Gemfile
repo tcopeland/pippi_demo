@@ -29,5 +29,5 @@ group :development, :test do
 end
 
 group :test do
-  gem 'pippi', :path => '../pippi'
+  gem 'pippi', "0.0.1"
 end
