@@ -13,13 +13,18 @@ bundle
 bundle exec rake db:create
 bundle exec rake db:migrate
 # and run the demo!
-USE_PIPPI=true bundle exec ruby test/models/book_test.rb
-```
+pippi_demo> $ USE_PIPPI=true bundle exec ruby test/models/book_test.rb && cat log/pippi.log
+Run options: --seed 62731
 
-And look!  There's some output in log/pippi.log.  Something like:
+# Running tests:
 
-```text
+......
+
+Finished tests in 0.016074s, 373.2736 tests/s, 124.4245 assertions/s.
+
+6 tests, 2 assertions, 0 failures, 0 errors, 0 skips
 /Users/tomcopeland/github.com/pippi_demo/.bundle/gems/activesupport-4.0.10/lib/active_support/callbacks.rb,ReverseFollowedByEach,402
+test/models/book_test.rb,AssertWithNil,29
 /Users/tomcopeland/github.com/pippi_demo/app/models/book.rb,ReverseFollowedByEach,8
 /Users/tomcopeland/github.com/pippi_demo/app/models/book.rb,SelectFollowedByFirst,12
 /Users/tomcopeland/github.com/pippi_demo/app/models/book.rb,SelectFollowedBySize,16
