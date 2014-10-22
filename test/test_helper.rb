@@ -3,7 +3,7 @@ require File.expand_path('../../config/environment', __FILE__)
 
 # This must be before rails/test_help or test/unit is required
 if ENV['USE_PIPPI'].present?
-  Pippi::AutoRunner.new(:checkset => ENV['PIPPI_CHECKSET'] || "training")
+  Pippi::AutoRunner.new(:checkset => ENV['PIPPI_CHECKSET'] || "basic")
 end
 
 require 'rails/test_help'
