@@ -16,4 +16,8 @@ class Book < ActiveRecord::Base
     [1,2,3].select {|x| x > 1 }.size
   end
 
+  def select_followed_by_empty_demo
+    [1,2,3].select {|x| x > 1 }.empty?
+  end
+
 end

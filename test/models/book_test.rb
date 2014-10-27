@@ -28,4 +28,8 @@ class BookTest < ActiveSupport::TestCase
     x = nil
     assert_equal(nil, x)
   end
+
+  test "select followed by empty" do
+    Book.new.select_followed_by_empty_demo
+  end
 end
