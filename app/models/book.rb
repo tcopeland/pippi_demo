@@ -20,4 +20,8 @@ class Book < ActiveRecord::Base
     [1,2,3].select {|x| x > 1 }.empty?
   end
 
+  def select_followed_by_select_demo
+    [1,2,3].select {|x| x > 1 }.select {|x| x > 2 }
+  end
+
 end
