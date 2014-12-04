@@ -33,6 +33,10 @@ class BookTest < ActiveSupport::TestCase
     Book.new.select_followed_by_empty_demo
   end
 
+  test "select followed by any" do
+    Book.new.select_followed_by_any_demo
+  end
+
   test "select followed by select" do
     Book.new.select_followed_by_select_demo
   end
