@@ -40,4 +40,9 @@ class BookTest < ActiveSupport::TestCase
   test "select followed by select" do
     Book.new.select_followed_by_select_demo
   end
+
+  test "select followed by none" do
+    Book.new.select_followed_by_none_demo
+  end
+
 end
