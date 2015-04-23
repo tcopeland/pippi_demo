@@ -32,4 +32,8 @@ class Book < ActiveRecord::Base
     [1,2,3].select {|x| x > 1 }.none?
   end
 
+  def strip_followed_by_empty_demo
+    "   ".strip.empty?
+  end
+
 end

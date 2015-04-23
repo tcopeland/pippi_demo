@@ -44,5 +44,9 @@ class BookTest < ActiveSupport::TestCase
   test "select followed by none" do
     Book.new.select_followed_by_none_demo
   end
+  
+  test "strip followed by empty" do
+    Book.new.strip_followed_by_empty_demo
+  end
 
 end
